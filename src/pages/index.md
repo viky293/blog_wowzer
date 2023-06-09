@@ -2,20 +2,16 @@
 templateKey: index-page
 title: Experiences Of Technical Journey
 image: /img/firefly-generated-banner-learning-technology.jpg
-heading: Experiences Of Technical Journey
-subheading: Support sustainable farming while enjoying a cup
+heading: Experiences of technical journey
+subheading: This image is generated using Adobe Firefly
 mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  title: Should we do it just because we can do it?
+  description: |
+    Asking right questions can change the world
+description: This blog is all about sharing the experiences of my technical
+  journey, and I see this blog as successor of what I started a [decade
+  ago](https://blog.wowzer.in/).  As we enter in an AI enabled world the needs
+  and requirements are going to change.
 intro:
   blurbs:
     - image: /img/coffee.png
