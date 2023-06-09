@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
+title: Experiences Of Technical Journey
+image: /img/firefly-generated-banner-learning-technology.jpg
+heading: Experiences Of Technical Journey
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Why Kaldi
