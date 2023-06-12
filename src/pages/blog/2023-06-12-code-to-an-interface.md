@@ -33,7 +33,15 @@ Some variants come with disc brakes, some have drum brakes, some cars
 
 Now let’s look at the swappable components that you believe have been swapped at the factory during creation of these variants.
 
-Remember yet everything fits in the chassis, you still get the option to apply brakes, check which gear you are on, you will always be able to start stop engine otherwise what’s the point of being in the car showroom. Until unless you are buying an EV where gearbox is a thing of past, something under the hood would still be changing gears even if you go for automatic. Though with this a approach your would still be able to fit in EV with no actual gearbox setup but let’s not get into those details.
+Remember yet everything fits in the chassis, you still get the option to apply brakes, check which gear you are on,
+
+you will always be able to start stop engine otherwise what’s the point of being in the car showroom.
+
+Until unless you are buying an EV where gearbox is a thing of past,
+
+something under the hood would still be changing gears even if you go for automatic.
+
+Though with this a approach your would still be able to fit in EV with no actual gearbox setup but let’s not get into those details.
 
 **Swappable components: –**
 
@@ -47,11 +55,17 @@ Remember yet everything fits in the chassis, you still get the option
 
 – Brakes
 
-For the sake of example let’s stick to only these major components. There won’t be actual scientific implementation of how each of them or automobile overall works. Purpose of example is to attempt and implementation that helps understand the benefits of coding to an interface as opposed to an implementation.
+For the sake of example let’s stick to only these major components.
+
+There won’t be actual scientific implementation of how each of them or automobile overall works.
+
+Purpose of example is to attempt and implementation that helps understand the benefits of coding to an interface as opposed to an implementation.
 
 Since these components are swappable yet they perform same operation but with different capabilities, hence it is good to assume a common interface for them. 
 
-We begin with defining the interface for each component. Then we define the base class and initialize each of these components in the constructor (better approaches are there, but not for this example).
+We begin with defining the interface for each component.
+
+Then we define the base class and initialize each of these components in the constructor (better approaches are there, but not for this example).
 
 **What’s not changing: –**
 
@@ -61,7 +75,7 @@ We begin with defining the interface for each component. Then we defi
 
 – You would always have speed tracking 
 
-So, we implement these functionalites in the \`BaseAutomobile\` class and we code to interfaces for swapable components.
+So, we implement these functionalities in the *BaseAutomobile* class and we code to interfaces for swappable components.
 
 **What are the different variations of what’s changing: –**
 
@@ -81,9 +95,9 @@ So these are our actual implementations that adheres to the interfaces
 
 **Showroom**
 
-Actually, showroom could have got prebuilt models from the \`Factory\` but let’s for now assemble them in the showroom itself. 
+Actually, showroom could have got prebuilt models from the  *Factory* but let’s for now assemble them in the showroom itself. 
 
-We create the actual \`Automobile\` variations by inherinting from \`BaseAutomobile\` Class in the showroom directory.
+We create the actual *Automobile* variations by inherinting from *BaseAutomobile* Class in the showroom directory.
 
 **Track.dart**
 
