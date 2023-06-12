@@ -1,34 +1,94 @@
 ---
-templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+templateKey: blog-post
+title: Code to an interface not to an implementation
+date: 2023-06-12T19:34:10.798Z
+description: |
+  Code to an interface not to an implementation
 featuredpost: true
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+featuredimage: /img/firefly-programming-interface-95893.jpg
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - DSA
+  - designpatterns
+  - programming
+  - solid
 ---
+![Conding to an interface and not to an implementation](/img/firefly-programming-interface-95893.jpg "Adobe firefly AI generated image")
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+GitHub: [Source](https://web.archive.org/web/20210314031131/https://github.com/viky293/dart-examples/tree/master/Automobiles)\
+**Example: Code to an interface not to an implementation** 
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+About the example, we have a base class of  *BaseAutomobile* that’s applicable for every consumer automobile in the world. Like Cars, Buses or Trucks. 
 
-## A little history
+The implementation is extensible for multiple engines, gearboxes, wheels setup and brakes.
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+**What an interface is?**
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+Head to my another simple explainer [here](https://web.archive.org/web/20210314031131/https://lekh.pw/a/AbpuFstrg).
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+Let’s assume that you walk into the showroom for a car and start evaluating multiple variants for a specific car. 
 
-## What you need to know before trying
+You will observe that there are certain components that differ from variant to variant and there are certain things that remain unchanged. Let’s segregate what changes from whats not changing at the car showroom.
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
+Some variants come with disc brakes, some have drum brakes, some cars have manual transmission and some have the automatic transmission. 
 
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
+Now let’s look at the swappable components that you believe have been swapped at the factory during creation of these variants.
 
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
+Remember yet everything fits in the chassis, you still get the option to apply brakes, check which gear you are on, you will always be able to start stop engine otherwise what’s the point of being in the car showroom. Until unless you are buying an EV where gearbox is a thing of past, something under the hood would still be changing gears even if you go for automatic. Though with this a approach your would still be able to fit in EV with no actual gearbox setup but let’s not get into those details.
+
+**Swappable components: –**
+
+ (That’s how Ford won at Le Mans and that’s how we will too)
+
+– Engine
+
+– Gearbox
+
+– Wheels
+
+– Brakes
+
+For the sake of example let’s stick to only these major components. There won’t be actual scientific implementation of how each of them or automobile overall works. Purpose of example is to attempt and implementation that helps understand the benefits of coding to an interface as opposed to an implementation.
+
+Since these components are swappable yet they perform same operation but with different capabilities, hence it is good to assume a common interface for them. 
+
+We begin with defining the interface for each component. Then we define the base class and initialize each of these components in the constructor (better approaches are there, but not for this example).
+
+**What’s not changing: –**
+
+– You will always drive the vehicle
+
+– You will always use the breaks
+
+– You would always have speed tracking 
+
+So, we implement these functionalites in the \`BaseAutomobile\` class and we code to interfaces for swapable components.
+
+**What are the different variations of what’s changing: –**
+
+– Four by four drive
+
+– Front wheel drive
+
+– Manual Transmission
+
+– Automatic Transimission
+
+– Disc brakes
+
+– Drum brakes
+
+So these are our actual implementations that adheres to the interfaces that we have already defined. Which means there would always be an option to apply the brakes.
+
+**Showroom**
+
+Actually, showroom could have got prebuilt models from the \`Factory\` but let’s for now assemble them in the showroom itself. 
+
+We create the actual \`Automobile\` variations by inherinting from \`BaseAutomobile\` Class in the showroom directory.
+
+**Track.dart**
+
+Finally let’s do some driving and test our brakes and transmissions.
+
+Hope you will find this example useful to understand the benefits or this principle. 
+
+This allows us composing our objects.

@@ -5,12 +5,16 @@ date: 2023-06-12T18:53:24.707Z
 description: If you have ever written a code you have already consumed some or
   the other API(s)
 featuredpost: false
-featuredimage: /img/flavor_wheel.jpg
+featuredimage: /img/document-systems.png
 tags:
   - Programming
   - backend
   - APIs
 ---
+
+
+
+
 ![RESTful API](/img/document-systems.png)
 
 As the full form goes Application Programming Interface, it suggests that we are trying to communicate with something. In order to do so we define certain contracts, which in simpler words is to define the rules of how you ask for something and how I will be responding back to you.
