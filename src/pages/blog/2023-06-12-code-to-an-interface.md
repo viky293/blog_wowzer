@@ -17,9 +17,12 @@ tags:
 GitHub: [Source](https://web.archive.org/web/20210314031131/https://github.com/viky293/dart-examples/tree/master/Automobiles)\
 **Example: Code to an interface not to an implementation** 
 
-About the example, we have a base class of  *BaseAutomobile* that’s applicable for every consumer automobile in the world. Like Cars, Buses or Trucks. 
+About the example,
+we have a base class of  BaseAutomobile that’s applicable for every consumer
+automobile in the world. Like Cars, Buses or Trucks. 
 
-The implementation is extensible for multiple engines, gearboxes, wheels setup and brakes.
+The implementation is extensible for multiple engines,
+gearboxes, wheels setup and brakes.
 
 **What an interface is?**
 

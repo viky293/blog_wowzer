@@ -33,22 +33,27 @@ const Navbar = () => {
                 to a ul for accessibilty purposes, would like to see a css
                 re-write that makes this unneccesary.
              */}
-            <li className="navbar-item" style={{padding: "0px"}}>
-              <Link className="navbar-item" to="/about">
-                About
+               <li className="navbar-item" style={{padding: "0px"}}>
+              <Link className="navbar-item" to="/">
+                Home
               </Link>
             </li>
-            <li className="navbar-item" style={{padding: "0px"}}>
+            {/* <li className="navbar-item" style={{padding: "0px"}}>
             <Link className="navbar-item" to="/products">
-              Products
+            Products
             </Link>
-            </li>
-            <li className="navbar-item" style={{padding: "0px"}}>
+          </li> */}
+             <li className="navbar-item" style={{padding: "0px"}}>
             <Link className="navbar-item" to="/blog">
               Blog
             </Link>
             </li>
-            <li className="navbar-item" style={{padding: "0px"}}>
+          <li className="navbar-item" style={{padding: "0px"}}>
+            <Link className="navbar-item" to="/about">
+              About
+            </Link>
+          </li>
+            {/*<li className="navbar-item" style={{padding: "0px"}}>
             <Link className="navbar-item" to="/contact">
               Contact
             </Link>
@@ -57,11 +62,11 @@ const Navbar = () => {
             <Link className="navbar-item" to="/contact/examples">
               Form Examples
             </Link>
-            </li>
+            </li> */}
           <li className="navbar-end has-text-centered">
             <a
               className="navbar-item"
-              href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+              href="https://github.com/viky293"
               target="_blank"
               rel="noopener noreferrer"
             >

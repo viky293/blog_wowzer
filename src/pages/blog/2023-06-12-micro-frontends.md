@@ -2,9 +2,7 @@
 templateKey: blog-post
 title: Micro Front-end / Services apeing the back-end
 date: 2023-06-12T19:53:41.701Z
-description: Brewing with a Chemex probably seems like a complicated,
-  time-consuming ordeal, but once you get used to the process, it becomes a
-  soothing ritual that's worth the effort every time.
+description: 
 featuredpost: false
 featuredimage: /img/firefly-micro-frontends-for-web-applications-95893.jpg
 tags:
