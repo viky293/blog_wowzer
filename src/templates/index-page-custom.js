@@ -71,7 +71,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query IndexPageCustomTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "index-page-custom" } }) {
       frontmatter {
         title
         image {
@@ -82,18 +82,6 @@ export const pageQuery = graphql`
         heading
         subheading
         description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
       }
     }
   }
