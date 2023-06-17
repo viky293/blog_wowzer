@@ -4,10 +4,11 @@ import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
-
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+import 'bootstrap/dist/css/bootstrap.min.css';
+deckDeckGoHighlightElement();
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,

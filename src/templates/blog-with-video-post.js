@@ -5,6 +5,9 @@ import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+import 'bootstrap/dist/css/bootstrap.min.css';
+deckDeckGoHighlightElement();
 
 // eslint-disable-next-line
 export const BlogWithVideoPostTemplate = ({
@@ -28,8 +31,8 @@ export const BlogWithVideoPostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
-            <div className="column is-12">
-            <iframe width="560" height="315" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div className="ratio ratio-16x9">
+            <iframe src={video} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
            </div>
             <PostContent content={content} />
             {tags && tags.length ? (
