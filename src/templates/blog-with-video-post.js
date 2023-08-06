@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import FullWidthVideo from "../components/FullWidthVideo";
 deckDeckGoHighlightElement();
 
 // eslint-disable-next-line
@@ -31,9 +32,7 @@ export const BlogWithVideoPostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
-            <div className="ratio ratio-16x9">
-            <iframe src={video} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-           </div>
+          <FullWidthVideo video={video} title={title}/>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>

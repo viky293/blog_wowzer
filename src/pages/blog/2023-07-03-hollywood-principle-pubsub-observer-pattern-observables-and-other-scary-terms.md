@@ -6,7 +6,6 @@ date: 2023-07-03T17:29:54.811Z
 description: "\"Don't call us we will call you\""
 featuredpost: true
 featuredimage: /img/firefly-generated-banner-learning-technology.jpg
-video: http://localhost:8000/admin/#/collections/blog/entries/2023-07-03-what-is-an-interface
 tags:
   - programming
   - coding
