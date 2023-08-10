@@ -5,7 +5,7 @@ date: 2023-06-15T15:04:10.000Z
 description: simple sorting algorithm
 featuredpost: false
 featuredimage: /img/soda-bubbles-analogy-for-bubble-sort.jpg
-video: https://www.youtube.com/embed/0KYBK8vko8I
+video: https://www.youtube.com/embed/I3v1orosIxE
 tags:
   - algorithms
   - sorting
