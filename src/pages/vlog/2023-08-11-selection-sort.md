@@ -3,7 +3,7 @@ templateKey: blog-with-video-post
 title: Selection sort, another simple sorting algorithm.
 date: 2023-06-15T15:04:10.000Z
 description: What are we selecting here? Why is it called selection sort?
-video: https://www.youtube.com/embed/I3v1orosIxE
+video: https://www.youtube.com/embed/G7KJ1f_RTF4
 featuredpost: true
 featuredimage: /img/ariel-oal07ai4otk-unsplash.jpg
 tags:
