@@ -1,11 +1,11 @@
 ---
 templateKey: blog-with-video-post
-title: Selection Sort, another simple sorting algorithm.
+title: Selection sort, another simple sorting algorithm.
 date: 2023-06-15T15:04:10.000Z
-description: What are selecting here?
+description: What are we selecting here? Why is it called selection sort?
+video: https://www.youtube.com/embed/I3v1orosIxE
 featuredpost: true
 featuredimage: /img/ariel-oal07ai4otk-unsplash.jpg
-video: https://www.youtube.com/embed/I3v1orosIxE
 tags:
   - algorithms
   - sorting
