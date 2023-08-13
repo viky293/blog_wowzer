@@ -1,6 +1,6 @@
 ---
 templateKey: blog-with-video-post
-title: Insertions sort, another simple sorting algorithm
+title: Insertion sort, another simple sorting algorithm
 date: 2023-08-13T15:34:46.504Z
 description: We sort by picking one element at a time from unsorted portion and
   insert it between a smaller & greater one in the sorted portion.
