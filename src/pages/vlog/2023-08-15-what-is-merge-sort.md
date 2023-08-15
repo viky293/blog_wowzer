@@ -10,8 +10,7 @@ tags:
   - algorithms
   - sorting
 ---
-##
-## Merge Sort
+## Recursive merge sort
 
 Works on the principle of divide and conquer.
 You split the array in sub arrays, until you can't further divide.
@@ -30,7 +29,9 @@ From other sub array which still has some elements,
 append the leftovers to the end of merged array.
 
 ### Time complexity
+
 Logarithmic time O(n*log(n))
+
 #### Code
 
 ```javascript
@@ -80,5 +81,4 @@ function merge_sort_2(
 
 console.log(merge_sort([16,1, 5, 4, -1, 0, 0, 3, 1, 2, 1]));
 console.log(merge_sort_2([16,1, 5, 4, -1, 0, 0, 3, 1, 2, 1]));
-
 ```
