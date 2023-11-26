@@ -19,3 +19,37 @@ Count sort is a sorting algorithm that works on a range bound inputs. It is a st
 
 
 Here is an example of how to implement count sort in JavaScript:
+
+#### Code
+
+```javascript
+//[0,9]
+function countSort(arr, min, max) {
+    //Build the frequency counter
+    //
+
+    let freq = [];
+    for (let i = min; i <= max; i++) {
+        freq[i] = 0;
+    }
+    //Building frequency counter
+    for (let i = 0; i < arr.length; i++) {
+        freq[arr[i]]++;
+    }
+    //Build cumulatice frequency
+    for(let i = 1;i<freq.length;i++){
+        freq[i]+=freq[i-1];
+    }
+    //Build the sorted Array
+    let sortedArr = [];
+    for(let i = arr.length-1;i>=0;i--){
+        let currentElement = arr[i];
+        let pos = freq[currentElement]-1;
+        sortedArr[pos]=currentElement;
+        freq[currentElement]--;
+    }
+    return sortedArr;
+}
+
+console.log(countSort([7,7,2,2,1,1,3,3,8,0],0,9));
+```

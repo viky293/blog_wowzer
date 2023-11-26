@@ -46,5 +46,41 @@ Heap sort is an efficient sorting algorithm that has an average time complexity 
 #### Code
 
 ```javascript
+function heapSort(arr){
+    function buildMaxHeap(){
+        for(let i = Math.floor(arr.length/2)-1;i>=0;i--){
+            heapify(i,arr.length-1);
+        }
+    }
+    function swap(l,r){
+        let temp = arr[l];
+        arr[l] = arr[r];
+        arr[r] = temp;
+    }
+    function heapify(i,end){
+        let leftChild = 2*i+1;
+        let rightChild = 2*i+2;
+        let maxI = i;
 
+        if(leftChild<=end && arr[leftChild]>arr[maxI]){
+            maxI=leftChild;
+        }
+        if(rightChild<=end && arr[rightChild]>arr[maxI]){
+            maxI=rightChild;
+        }
+        swap(maxI,i);
+        if(maxI!==i){
+            heapify(maxI,end);
+        }
+    }
+
+    buildMaxHeap();
+    for(let i = 0;i<arr.length;i++){
+        swap(0,arr.length-1-i); 
+        heapify(0,arr.length-2-i);
+    }
+     return arr;
+}
+console.log(heapSort([9,1,3,2,5,6,7]));
+// Valid heap -> 9,5,7,2,1,6,3
 ```
