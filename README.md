@@ -1,6 +1,6 @@
 # To start local dev server
 npx netlify-cms-proxy-server
-gatsby develop
+gatsby develop                  http://localhost:8000/
 
 # Gatsby + Decap CMS Starter
 
